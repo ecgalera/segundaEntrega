@@ -57,19 +57,19 @@ router.put("/:pid", async (req, res) => {
         const { pid } = req.params;
         const product = req.body;
         const productUpdate = await pm.updateProduct(pid, product);
-        res.send({ status: "success", payload:productUpdate});
+        res.send({ status: "success", payload: productUpdate });
 
     } catch (error) {
         console.log("Product no actualizado")
     }
 });
 
-router.delete("/:pid", async(req, res)=>{
+router.delete("/:pid", async (req, res) => {
     try {
 
-        const {pid} = req.params;
+        const { pid } = req.params;
         const productDelete = await pm.deleteProduct(pid)
-        res.send({status: "success", payload: productDelete})
+        res.send({ status: "success", payload: productDelete })
 
     } catch (error) {
         console.log("Producto no eliminado")

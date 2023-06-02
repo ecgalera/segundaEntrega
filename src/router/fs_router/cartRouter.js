@@ -58,8 +58,8 @@ router.post(`/:cId/product/:pId`, async (req, res) => {
 });
 
 
-  
 
-router.put(`/:cId`, async (req, res) => {});
 
-router.delete("/:cId", async (req, res) => {});
+router.put(`/:cId`, async (req, res) => { });
+
+router.delete("/:cId", async (req, res) => { });

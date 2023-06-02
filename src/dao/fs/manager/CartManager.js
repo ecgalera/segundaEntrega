@@ -14,7 +14,7 @@ export default class CartsManager {
 
         return productsToAdd;
       } else {
-        console.log("No Hay ningun array en el carrito");
+        // console.log("No Hay ningun array en el carrito");
         return [];
       }
     } catch (error) {
